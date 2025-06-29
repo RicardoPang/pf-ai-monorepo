@@ -1,0 +1,12 @@
+{
+  "name": "@pf/types",
+  "version": "1.0.0",
+  "description": "TS 类型声明（Solidity ABI、链上数据结构、Response DTO）",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

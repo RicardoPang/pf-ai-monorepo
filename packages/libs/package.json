@@ -1,0 +1,14 @@
+{
+  "name": "@pf/libs",
+  "version": "1.0.2",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --declaration --emitDeclarationOnly false --outDir dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "gitHead": "b05bdc77906b218fab2da39b3f90d7d69239d900"
+}

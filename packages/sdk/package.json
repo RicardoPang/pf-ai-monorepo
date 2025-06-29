@@ -1,0 +1,12 @@
+{
+  "name": "@pf/sdk",
+  "version": "1.0.0",
+  "description": "链上/链下服务封装",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
