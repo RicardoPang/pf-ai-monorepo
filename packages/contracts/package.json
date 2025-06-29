@@ -1,6 +1,6 @@
 {
   "name": "@pf/contracts",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "智能合约类型 & 工具 ",
   "main": "index.js",
   "scripts": {

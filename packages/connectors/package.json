@@ -1,6 +1,6 @@
 {
   "name": "@pf/connectors",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Wallet 连接器封装 ",
   "main": "index.js",
   "scripts": {

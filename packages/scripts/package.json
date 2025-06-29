@@ -1,6 +1,6 @@
 {
   "name": "@pf/scripts",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "构建、部署、合约验证、TypeChain 生成的脚本  ",
   "main": "index.js",
   "scripts": {

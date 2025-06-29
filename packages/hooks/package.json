@@ -1,6 +1,6 @@
 {
   "name": "@pf/hooks",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "main": "index.js",
   "scripts": {
     "build": "tsc --declaration --emitDeclarationOnly false --outDir dist"
@@ -14,10 +14,10 @@
   },
   "devDependencies": {
     "@pf/ui": "workspace:*",
-    "react": "*",
-    "react-dom": "*",
     "@types/react": "*",
-    "@types/react-dom": "*"
+    "@types/react-dom": "*",
+    "react": "*",
+    "react-dom": "*"
   },
   "gitHead": "b05bdc77906b218fab2da39b3f90d7d69239d900"
 }

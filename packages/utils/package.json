@@ -1,6 +1,6 @@
 {
   "name": "@pf/utils",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "工具函数（格式化、BigNumber 转换、日期、地址校验、签名）",
   "main": "index.js",
   "scripts": {

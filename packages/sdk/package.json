@@ -1,6 +1,6 @@
 {
   "name": "@pf/sdk",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "链上/链下服务封装",
   "main": "index.js",
   "scripts": {
