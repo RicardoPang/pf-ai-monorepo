@@ -1,6 +1,6 @@
 {
   "name": "@pf/hooks",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "main": "index.js",
   "scripts": {
     "build": "tsc --declaration --emitDeclarationOnly false --outDir dist"
@@ -13,7 +13,7 @@
     "react": ">=17.0.0"
   },
   "devDependencies": {
-    "@pf/ui": "^1.1.8",
+    "@pf/ui": "^1.2.0",
     "@types/react": "*",
     "@types/react-dom": "*",
     "react": "*",

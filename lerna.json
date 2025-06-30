@@ -1,18 +1,21 @@
 {
   "$schema": "node_modules/lerna/schemas/lerna-schema.json",
-  "npmClient": "pnpm",
+  "npmClient": "npm",
   "version": "independent",
   "packages": ["packages/*", "apps/*"],
   "ignoreChanges": ["**/node_modules/**", "**/__snapshots__/**", "**/CHANGELOG.md"],
   "command": {
     "publish": {
+      "registry": "http://localhost:4873",
       "conventionalCommits": false,
+      "message": "[skip ci] chore: release",
       "skipGit": true,
       "yes": true
     },
     "version": {
       "conventionalCommits": false,
-      "skipGit": true
+      "skipGit": true,
+      "allowBranch": "*"
     }
   }
 }

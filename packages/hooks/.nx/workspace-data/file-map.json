@@ -1,0 +1,43 @@
+{
+  "version": "6.0",
+  "nxVersion": "20.8.2",
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {},
+    "nonProjectFiles": [
+      {
+        "file": "global.d.ts",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "index.js",
+        "hash": "1378622333941831657"
+      },
+      {
+        "file": "package.json",
+        "hash": "9845975843417355475"
+      },
+      {
+        "file": "test-ui.js",
+        "hash": "8638299150088105170"
+      },
+      {
+        "file": "useContract.ts",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "useEthers.ts",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "useGasPrice.ts",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "useMetamask.ts",
+        "hash": "7849870023264349332"
+      }
+    ]
+  }
+}
