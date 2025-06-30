@@ -1,4 +1,4 @@
-const data = 'libs 🌹';
+const data = 'libs 🌹🌹🌹';
 export default data;
 
 export function formatAddress(addr: string): string {
