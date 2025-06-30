@@ -77,8 +77,8 @@ importers:
   packages/hooks:
     devDependencies:
       '@pf/ui':
-        specifier: ^1.1.7
-        version: 1.1.7
+        specifier: ^1.1.8
+        version: 1.1.8
       '@types/react':
         specifier: '*'
         version: 19.1.8
@@ -1343,10 +1343,10 @@ packages:
         integrity: sha512-rWWLf1c7B8r7EAioeq2vOgM98INOaAXWQwYPZoAc2olPrOOGdOgaBNNBzFRidbK1kavaNP7lejlD+z90Gt7rBA==,
       }
 
-  '@pf/ui@1.1.7':
+  '@pf/ui@1.1.8':
     resolution:
       {
-        integrity: sha512-udTjyum+dKXAsnn3Tf0Gmybfmy1WGovgQ4TS2NW0h15jWALxFLd4QvXzeBbIYMF2gcS6vqRnYH5OmciszA0tOA==,
+        integrity: sha512-VI4x8EfABbyo2aZu2T7KUQhCxBiyPDxwXTjnViNjjTo8ey8vZvMMRA9aWDTRAT+B8ttxn9NRwQbAZxRH6VSjBA==,
       }
 
   '@pkgjs/parseargs@0.11.0':
@@ -8197,7 +8197,7 @@ snapshots:
 
   '@pf/libs@1.1.4': {}
 
-  '@pf/ui@1.1.7':
+  '@pf/ui@1.1.8':
     dependencies:
       '@pf/libs': 1.1.4
 
