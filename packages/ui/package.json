@@ -1,6 +1,6 @@
 {
   "name": "@pf/ui",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "main": "index.js",
   "scripts": {
     "build": "tsc --declaration --emitDeclarationOnly false --outDir dist"
@@ -11,6 +11,6 @@
   "description": "通用 UI 组件库（按钮、输入框、弹窗、Toast 等）",
   "gitHead": "c95cca02fd9e9c3daca71e8e662c02efa74df377",
   "dependencies": {
-    "@pf/libs": "^1.1.2"
+    "@pf/libs": "^1.1.3"
   }
 }

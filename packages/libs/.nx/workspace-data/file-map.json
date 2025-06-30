@@ -7,16 +7,12 @@
     "projectFileMap": {},
     "nonProjectFiles": [
       {
-        "file": "CHANGELOG.md",
-        "hash": "7714074855946968168"
-      },
-      {
         "file": "index.ts",
         "hash": "5087338363870452254"
       },
       {
         "file": "package.json",
-        "hash": "3701871763073303654"
+        "hash": "9486579395781335248"
       }
     ]
   }
