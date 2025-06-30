@@ -16,6 +16,33 @@ fi
 echo "📦 Running lerna publish..."
 npx lerna publish --registry http://localhost:4873
 
+# 如果 lerna 失败，手动发布已更新版本的包
+if [ $? -ne 0 ]; then
+    echo "⚠️  Lerna publish failed, trying manual publish..."
+    
+    # 检查并发布每个包
+    for pkg_dir in packages/* apps/*; do
+        if [ -d "$pkg_dir" ] && [ -f "$pkg_dir/package.json" ]; then
+            cd "$pkg_dir"
+            pkg_name=$(node -p "require('./package.json').name" 2>/dev/null || echo "")
+            pkg_version=$(node -p "require('./package.json').version" 2>/dev/null || echo "")
+            
+            if [ -n "$pkg_name" ] && [ -n "$pkg_version" ]; then
+                echo "🔍 Checking $pkg_name@$pkg_version..."
+                
+                # 检查版本是否已发布
+                if ! npm view "$pkg_name@$pkg_version" --registry http://localhost:4873 >/dev/null 2>&1; then
+                    echo "📤 Publishing $pkg_name@$pkg_version..."
+                    npm publish --registry http://localhost:4873 2>/dev/null || echo "❌ Failed to publish $pkg_name"
+                else
+                    echo "✅ $pkg_name@$pkg_version already published"
+                fi
+            fi
+            cd - >/dev/null
+        fi
+    done
+fi
+
 # 检查是否有版本文件变更
 if git status --porcelain | grep -E "(package\.json|CHANGELOG\.md)"; then
     echo "🧹 Cleaning up version changes..."
