@@ -4,7 +4,9 @@
   "description": "完成Monorepo环境搭建，构思下什么项目放到packages中合适",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish": "./lerna-publish.sh",
+    "clean-publish": "./lerna-publish.sh"
   },
   "keywords": [],
   "author": "",
