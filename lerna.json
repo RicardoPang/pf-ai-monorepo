@@ -3,11 +3,15 @@
   "npmClient": "pnpm",
   "version": "independent",
   "packages": ["packages/*", "apps/*"],
-  "ignoreChanges": ["**/node_modules/**", "**/__snapshots__/**"],
+  "ignoreChanges": ["**/node_modules/**", "**/__snapshots__/**", "**/CHANGELOG.md"],
   "command": {
     "publish": {
-      "conventionalCommits": true,
-      "message": "[skip ci] chore: release",
+      "conventionalCommits": false,
+      "skipGit": true,
+      "yes": true
+    },
+    "version": {
+      "conventionalCommits": false,
       "skipGit": true
     }
   }
