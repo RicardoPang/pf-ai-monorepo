@@ -1,0 +1,89 @@
+# Dependencies
+node_modules/
+*/node_modules/
+**/node_modules/
+
+# Build outputs
+dist/
+*/dist/
+**/dist/
+build/
+.next/
+*/.next/
+**/.next/
+out/
+*/out/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Lock files (keep pnpm-lock.yaml)
+yarn.lock
+package-lock.json
+*/package-lock.json
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Test coverage
+coverage/
+nyc_output/
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# NPM configuration with sensitive tokens
+.npmrc
+*/.npmrc
+**/.npmrc
+
+# Temporary files
+tmp/
+temp/
+
+# Cache directories
+.cache/
+.parcel-cache/
+.eslintcache
+
+# Documentation (if not needed in package)
+CHANGELOG.md
+docs/
+
+# Development configs
+.eslintrc*
+.prettierrc*
+tsconfig.json
+.gitignore
+
+# Claude files
+.claude/
+
+# Lerna
+lerna-debug.log
+
+项目总结/
+*storybook.log
+storybook-static
