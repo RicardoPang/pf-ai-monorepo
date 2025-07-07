@@ -16,7 +16,7 @@
   "exports": {
     ".": {
       "import": "./dist/index.modern.js",
-      "require": "./dist/indexI.js"
+      "require": "./dist/index.js"
     },
     "./dist/index.css": "./dist/index.css"
   },
@@ -30,6 +30,8 @@
     "build": "microbundle --jsx React.createElement --jsxFragment React.Fragment --css-modules false && npm run build:css",
     "build:css": "tailwindcss -i ./src/globals.css -o ./dist/index.css --minify",
     "dev": "microbundle watch --jsx React.createElement --jsxFragment React.Fragment",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "prepublishOnly": "npm run build",
     "publish": "npm publish"
   },
@@ -57,7 +59,10 @@
     "@radix-ui/react-tooltip": "^1.0.7",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
-    "lucide-react": "^0.263.1"
+    "lucide-react": "^0.263.1",
+    "react-hook-form": "^7.52.1",
+    "@hookform/resolvers": "^3.9.0",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^4.0.1",
