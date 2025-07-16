@@ -13,13 +13,16 @@ const dirname =
 // More info at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon
 export default defineConfig({
   test: {
+    environment: 'jsdom',
+    setupFiles: ['./src/test-setup.ts'],
+    globals: true,
     projects: [
       {
         extends: true,
         plugins: [
           // The plugin will run tests for the stories defined in your Storybook config
           // See options at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon#storybooktest
-          storybookTest({ configDir: path.join(dirname, '../../apps/pf-ui-interface/.storybook') }),
+          storybookTest({ configDir: path.join(dirname, '.storybook') }),
         ],
         test: {
           name: 'storybook',
@@ -29,7 +32,7 @@ export default defineConfig({
             provider: 'playwright',
             instances: [{ browser: 'chromium' }],
           },
-          setupFiles: ['../../apps/pf-ui-interface/.storybook/vitest.setup.ts'],
+          setupFiles: ['./.storybook/vitest.setup.ts'],
         },
       },
     ],

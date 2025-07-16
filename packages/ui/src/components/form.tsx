@@ -33,7 +33,7 @@ const FormField = <
 ) => {
   return (
     <FormFieldContext.Provider value={{ name: props.name }}>
-      {React.createElement(Controller, props)}
+      <Controller {...props} />
     </FormFieldContext.Provider>
   );
 };
